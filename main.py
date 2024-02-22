@@ -6,7 +6,8 @@ model = Model()
 
 def generate(prompt, neg_prompt, progress=gr.Progress(track_tqdm=True)):
     if not prompt:
-        raise gr.Error('prompt textbox conn`t be empty')
+        gr.Warning('prompt textbox conn`t be empty')
+        return
     image = model.create_image(prompt, neg_prompt=neg_prompt)
     return image
 
