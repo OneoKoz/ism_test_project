@@ -1,0 +1,5 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==2.1.2+cpu 
+diffusers==0.26.3
+gradio==4.18.0
+transformers==4.37.2
